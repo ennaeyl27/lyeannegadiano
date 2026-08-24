@@ -1,0 +1,84 @@
+/* Brand Logos */
+.brand-logos {
+  position: relative;
+  z-index: 3;
+  padding-top: 8px;
+}
+
+.brand-logos-header {
+  align-items: end;
+}
+
+.brand-logos-header p {
+  margin: 0;
+  font-size: 14px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.brand-logos-header span {
+  color: var(--pistachio-dark);
+  font-weight: 700;
+}
+
+.brand-logos-container {
+  padding: 54px 0 64px 0;
+  overflow: hidden;
+}
+
+/* Custom Item Rendering */
+.brand-loop-item-custom {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.brand-loop-item-custom img {
+  height: var(--logoloop-logoHeight);
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.brand-tooltip {
+  position: absolute;
+  top: calc(100% + 14px);
+  background: var(--ink);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  pointer-events: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 20;
+}
+
+/* Little triangle on tooltip */
+.brand-tooltip::before {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent var(--ink) transparent;
+}
+
+.logoloop--scale-hover .brand-loop-item-custom:hover img {
+  transform: scale(1.15);
+}
+
+.logoloop--scale-hover .brand-loop-item-custom:hover .brand-tooltip {
+  opacity: 1;
+  transform: translateY(0);
+}

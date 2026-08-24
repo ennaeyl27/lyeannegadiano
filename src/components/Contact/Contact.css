@@ -1,0 +1,108 @@
+/* Contact Banner */
+.contact-banner {
+  background: linear-gradient(135deg, #587541 0%, #6E8E53 100%);
+  color: var(--butter-bg);
+  border-radius: 16px;
+  padding: 30px 36px;
+  display: grid;
+  grid-template-columns: auto 1fr 1.2fr auto;
+  align-items: center;
+  gap: 24px;
+  margin: 16px 0 54px;
+  box-shadow: 0 16px 36px -10px rgba(74, 99, 53, 0.35);
+  border: 1px solid rgba(244, 222, 132, 0.2);
+}
+
+.envelope {
+  font-size: 40px;
+  color: var(--butter-accent);
+}
+
+.contact-banner p {
+  font-size: 14px;
+  letter-spacing: 0.12em;
+  font-weight: 600;
+  margin: 0;
+  color: var(--butter-bright);
+}
+
+.contact-banner h2 {
+  font: italic 28px var(--serif);
+  margin: 2px 0 0;
+  color: #FFFFFF;
+}
+
+.availability {
+  line-height: 1.55;
+  opacity: 0.9;
+  letter-spacing: 0 !important;
+  color: #F3F7EE !important;
+  font-size: 14px !important;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--butter-accent);
+  color: var(--pistachio-dark);
+  font-weight: 700;
+  border: 1px solid var(--butter-bright);
+  border-radius: 99px;
+  padding: 10px 16px;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: var(--transition);
+}
+
+.contact-btn:hover {
+  background: #FFFFFF;
+  color: var(--pistachio-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 900px) {
+  .contact-banner {
+    grid-template-columns: auto 1fr;
+  }
+  .availability {
+    grid-column: 2;
+  }
+  .contact-links {
+    grid-column: 2;
+  }
+}
+@media (max-width: 620px) {
+  .contact-banner {
+    grid-template-columns: 1fr;
+    padding: 24px 20px;
+  }
+  .availability,
+  .contact-links {
+    grid-column: auto;
+  }
+  .contact-links {
+    flex-wrap: nowrap;
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    scrollbar-width: none;
+  }
+  .contact-links::-webkit-scrollbar {
+    display: none;
+  }
+  .contact-btn {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+}

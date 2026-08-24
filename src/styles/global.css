@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+
+:root {
+  /* Butter Yellow & Pistachio Green Palette */
+  --butter-bg: #FAFAFA;          /* Soft white canvas */
+  --butter-soft: #F0F0F0;        /* Soft neutral fill */
+  --butter-accent: #F4DE84;      /* Radiant golden butter yellow */
+  --butter-bright: #FFF0A8;      /* Light butter highlight */
+
+  --pistachio: #6D8B52;          /* Rich primary pistachio green */
+  --pistachio-dark: #4A6335;     /* Deep pistachio for contrast & focus */
+  --pistachio-light: #8BA96E;    /* Fresh light pistachio */
+  --pistachio-soft: #E3ECD7;     /* Soft pistachio tint for badges & pills */
+  --pistachio-glow: rgba(109, 139, 82, 0.18);
+
+  --ink: #181E15;                /* Deep warm charcoal ink */
+  --ink-secondary: #353E2F;      /* Secondary dark */
+  --muted: #5F6A56;              /* Muted body text with warm olive-sage undertone */
+  --line: #DAD3BD;               /* Subtle warm dividing line */
+  --line-pistachio: #CBD6BF;     /* Subtle green-tinted line */
+
+  --paper: var(--butter-bg);
+  --soft: var(--butter-soft);
+  --olive: var(--pistachio);
+
+  --serif: 'Playfair Display', Georgia, serif;
+  --display: 'Bebas Neue', 'Playfair Display', sans-serif;
+  --sans: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+  --transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Base Typography Scale */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  color: var(--ink);
+}
+
+h2 {
+  font-size: clamp(28px, 4vw, 40px);
+  font-family: var(--display);
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  line-height: 1.1;
+}
+
+h3 {
+  font-size: clamp(20px, 3vw, 28px);
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--butter-bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+}
+
+button, a {
+  font: inherit;
+  color: inherit;
+  transition: var(--transition);
+}
+
+button {
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.site-shell {
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 48px;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 900px) {
+  .site-shell {
+    padding: 0 24px;
+  }
+}
+@media (max-width: 620px) {
+  .site-shell {
+    padding: 0 18px;
+  }
+  .section {
+    padding-bottom: 48px;
+  }
+}
+
+/* Scroll Reveal Animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}

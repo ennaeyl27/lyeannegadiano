@@ -1,0 +1,124 @@
+/* Process Section */
+.process {
+}
+
+.process > h2 {
+  margin-bottom: 32px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 24px;
+}
+
+.process-timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 64px auto;
+}
+
+.process-timeline::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  background: var(--line-pistachio);
+}
+
+.timeline-step {
+  position: relative;
+  width: 50%;
+  margin-bottom: 48px;
+}
+
+.timeline-step:last-child {
+  margin-bottom: 0;
+}
+
+/* Odd items on the left */
+.timeline-step:nth-child(odd) {
+  left: 0;
+  padding-right: 48px;
+  text-align: right;
+}
+
+/* Even items on the right */
+.timeline-step:nth-child(even) {
+  left: 50%;
+  padding-left: 48px;
+  text-align: left;
+}
+
+.timeline-dot {
+  position: absolute;
+  top: 6px;
+  width: 14px;
+  height: 14px;
+  background: var(--butter-soft);
+  border: 2px solid var(--pistachio);
+  border-radius: 50%;
+  transition: var(--transition);
+  box-shadow: 0 0 0 4px var(--butter-bg);
+}
+
+.timeline-step:nth-child(odd) .timeline-dot {
+  right: -7px;
+}
+
+.timeline-step:nth-child(even) .timeline-dot {
+  left: -7px;
+}
+
+.timeline-step:hover .timeline-dot {
+  background: var(--pistachio);
+  box-shadow: 0 0 0 6px var(--pistachio-glow);
+}
+
+.step-number {
+  font: 32px var(--serif);
+  font-weight: 500;
+  color: var(--pistachio-light);
+  display: block;
+  margin-bottom: 8px;
+  transition: var(--transition);
+}
+
+.timeline-step:hover .step-number {
+  color: var(--pistachio-dark);
+}
+
+.timeline-content h3 {
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin: 0 0 8px;
+}
+
+.timeline-content p {
+  font-size: 15px;
+  color: var(--muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .process-timeline::before {
+    left: 16px;
+  }
+  
+  .timeline-step {
+    width: 100%;
+    left: 0 !important;
+    padding-left: 56px !important;
+    padding-right: 0 !important;
+    text-align: left !important;
+  }
+  
+  .timeline-step:nth-child(odd) .timeline-dot,
+  .timeline-step:nth-child(even) .timeline-dot {
+    left: 9px;
+    right: auto;
+  }
+}

@@ -1,0 +1,270 @@
+/* Hero Section (Reverted to old structure but keeping new layout style) */
+.hero {
+  min-height: 0;
+  position: relative;
+  padding: 72px 0 0;
+  display: flex;
+  flex-direction: column;
+  overflow: visible;
+}
+
+.eyebrow {
+  font-size: 16px;
+  letter-spacing: 0.22em;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  color: var(--pistachio-dark);
+  position: relative;
+  z-index: 10;
+  margin-bottom: 8px;
+}
+
+.line {
+  height: 1.5px;
+  background: var(--pistachio-light);
+  width: 180px;
+  display: inline-block;
+  opacity: 0.7;
+}
+
+/* Giant Brutalist Typography Layer (Behind Photo) */
+.hero-brutalist-title {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  line-height: 0.84;
+  font-weight: 400; /* Bebas Neue is bold already */
+  font-family: var(--display);
+  font-size: clamp(108px, 18vw, 220px);
+  letter-spacing: -0.045em;
+  color: var(--ink);
+  opacity: 0.92;
+  user-select: none;
+  pointer-events: none;
+  margin: 4px 0 10px;
+  width: fit-content;
+  max-width: 100%;
+}
+
+.hero-brutalist-title .title-row:first-child {
+  transform: translateX(0);
+}
+
+.hero-brutalist-title .title-row:last-child {
+  transform: translateX(220px);
+}
+
+.hero-grid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: minmax(0, 1.04fr) minmax(420px, 0.96fr);
+  align-items: start;
+  gap: 8px;
+  width: 100%;
+  margin-top: -10px;
+}
+
+.hero-copy {
+  position: relative;
+  z-index: 4;
+  align-self: flex-start;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.hero-statement {
+  font: 32px/1.22 var(--serif);
+  max-width: 480px;
+  margin: 0;
+  color: var(--ink);
+}
+
+.hero-statement em {
+  color: var(--pistachio-dark);
+  font-style: italic;
+  font-weight: 500;
+  background: linear-gradient(180deg, transparent 65%, var(--butter-accent) 65%);
+  padding: 0 4px;
+  border-radius: 2px;
+}
+
+/* Enlarged Foreground Portrait */
+.hero-visual {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100%;
+  min-height: 440px;
+  padding-top: 0;
+  margin-top: -8px;
+}
+
+.hero-portrait-frame {
+  position: relative;
+  width: 100%;
+  max-width: 740px;
+  height: 600px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: -50px;
+  margin-bottom: -8px;
+  background: transparent;
+}
+
+.hero-portrait-img {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  max-height: 640px;
+  object-fit: contain;
+  object-position: bottom center;
+  display: block;
+  margin-bottom: 0;
+  filter: drop-shadow(0 20px 40px rgba(28, 35, 24, 0.16));
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  transform-origin: bottom center;
+  transform: scale(1.09);
+}
+
+.hero-portrait-frame:hover .hero-portrait-img {
+  transform: scale(1.11);
+}
+
+.location {
+  position: absolute;
+  right: 12px;
+  bottom: 40px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--ink);
+  background: rgba(250, 246, 235, 0.92);
+  padding: 6px 14px;
+  border-radius: 99px;
+  border: 1px solid var(--line);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  z-index: 5;
+}
+
+.location span {
+  display: inline-block;
+  color: var(--pistachio);
+  margin-left: 6px;
+  animation: pulseDot 2s infinite ease-in-out;
+}
+
+.hero-social-icons {
+  position: absolute;
+  right: 12px;
+  bottom: 40px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  z-index: 5;
+}
+
+.hero-social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  font-size: 22px;
+}
+
+.hero-social-icons a:hover {
+  transform: scale(1.15) translateY(-2px);
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.15));
+}
+
+@keyframes pulseDot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.8); }
+}
+
+@media (max-width: 900px) {
+  .hero-brutalist-title {
+    font-size: clamp(70px, 18vw, 140px);
+    line-height: 0.86;
+    margin-bottom: 8px;
+  }
+  .hero-brutalist-title .title-row:last-child {
+    transform: translateX(120px);
+  }
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .hero-copy {
+  }
+  .hero-visual {
+    min-height: 380px;
+    padding-top: 0;
+    margin-top: -18px;
+  }
+  .hero-portrait-frame {
+    max-width: 520px;
+    height: 430px;
+    margin-top: -32px;
+  }
+  .hero-portrait-img {
+    max-height: 430px;
+    transform: scale(1.08); /* Removed translateY to fix pants */
+  }
+  .location,
+  .hero-social-icons {
+    right: 5%;
+    bottom: 64px;
+  }
+}
+
+@media (max-width: 620px) {
+  .eyebrow {
+    margin-bottom: 24px;
+  }
+  .hero-brutalist-title {
+    font-size: clamp(54px, 18vw, 88px);
+    line-height: 0.88;
+    margin-top: 40px;
+    margin-bottom: 24px;
+  }
+  .hero-brutalist-title .title-row:last-child {
+    transform: translateX(80px);
+  }
+  .hero-statement {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+  .hero-portrait-frame {
+    max-width: 390px;
+    height: 390px;
+    margin-top: -24px;
+  }
+  .hero-portrait-img {
+    max-height: 390px;
+    transform: scale(1.06); /* Removed translateY to fix pants */
+  }
+}

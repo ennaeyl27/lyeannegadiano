@@ -1,0 +1,41 @@
+/* Education Section */
+.education {
+}
+
+.education > h2 {
+  margin-bottom: 32px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 24px;
+}
+
+.edu-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+}
+
+.edu-row h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--ink);
+  margin: 0 0 4px;
+}
+
+.edu-row p {
+  font-size: 14px;
+  color: var(--muted);
+  margin: 0;
+}
+
+.edu-row strong {
+  display: inline-block;
+  min-width: 110px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--pistachio-dark);
+  background: var(--pistachio-soft);
+  padding: 4px 12px;
+  border-radius: 99px;
+}

@@ -1,11 +1,15 @@
 export const portfolio = {
-  name: 'LYEANNE GADIANO',
-  eyebrow: 'DIGITAL CONTENT CREATOR & UI/UX DESIGNER',
+  name: 'Lyeanne Gadiano',
+  eyebrow: 'DIGITAL CONTENT CREATOR & WEB DESIGNER',
   headline: 'I transform ideas into digital experiences people can connect with.',
   intro: 'Creative professional with experience in digital content creation, UI/UX design, short-form video editing, social media management, technical support, and customer service.',
-  location: 'Philippines',
+  location: 'Metro Manila, Philippines',
   email: 'gadianolyeanne@gmail.com',
-  phone: '09763468188',
+  phone: '0976 346 8188',
+  socials: {
+    tiktok: 'https://www.tiktok.com/@ennaeyl',
+    linkedin: 'https://www.linkedin.com/in/lyeanne-gadiano-491354311/'
+  },
   stats: [
     { value: '3+', label: 'YEARS IN DIGITAL CONTENT' },
     { value: '50+', label: 'BRAND COLLABORATIONS' },
@@ -22,7 +26,8 @@ export const portfolio = {
     { title: 'CONTENT CREATION', text: 'Short-form content for TikTok and Instagram, from concept to final edit.' },
     { title: 'SOCIAL MEDIA', text: 'Content planning, ideas, captions, hooks, and platform-ready creative.' },
     { title: 'VIDEO EDITING', text: 'Clean, engaging edits using CapCut with text, transitions, sound, and captions.' },
-    { title: 'UGC', text: 'Authentic user-generated-style content for fashion, beauty, lifestyle, and brands.' }
+    { title: 'UGC', text: 'Authentic user-generated-style content for fashion, beauty, lifestyle, and brands.' },
+    { title: 'Web Design', text: 'Modern, responsive interfaces blending bold aesthetics with seamless user experiences.' }
   ],
   process: [
     ['01', 'DISCOVER', 'Understand the goal, audience, and content direction.'],
@@ -34,7 +39,7 @@ export const portfolio = {
   experience: [
     {
       title: 'Content Creation',
-      date: 'June 2023 — Present',
+      date: 'Jun 2023 — Present',
       subtitle: 'Social Media Content Creator',
       bullets: [
         'Created short-form video content for TikTok and Instagram focused on fashion, beauty, lifestyle, and UGC.',
@@ -44,7 +49,7 @@ export const portfolio = {
     },
     {
       title: 'Customer Service Representative',
-      date: 'November 2022 — March 2023',
+      date: 'Nov 2022 — Mar 2023',
       subtitle: 'Customer Service / Technical Support / Sales',
       bullets: [
         'Assisted customers with service-related concerns and provided clear, professional support.',
@@ -54,30 +59,87 @@ export const portfolio = {
     }
   ],
   education: [
-    { school: 'Polytechnic University of the Philippines — San Juan', degree: 'Bachelor of Science in Information Technology', status: 'Undergraduate' },
+    { school: 'Polytechnic University of the Philippines — San Juan Campus', degree: 'Bachelor of Science in Information Technology', status: '2022-2027' },
     { school: 'College of Arts and Sciences in Asia and the Pacific', degree: 'Information and Communications Technology — Senior High School', status: '2017 — 2021' }
   ],
-  skills: [
-    'Social Media Content Creation',
-    'Social Media Management',
-    'UI/UX Design',
-    'Short-Form Video Editing',
-    'UGC Content Creation',
-    'Content Planning & Strategy',
-    'HTML5',
-    'CSS',
-    'JavaScript',
-    'Python',
-    'C',
-    'C++',
-    'Canva',
-    'CapCut',
-    'Microsoft Office',
-    'Google Workspace'
-  ],
+  skills: {
+    content: [
+      'Social Media Management',
+      'UGC Content Creation',
+      'CapCut',
+      'Content Planning & Strategy',
+      'Short-Form Video Editing',
+      'Canva'
+    ],
+    tech: [
+      'Web Design',
+      'HTML5',
+      'CSS',
+      'JavaScript',
+      'Python',
+      'C++',
+      'Microsoft Office',
+      'Google Workspace'
+    ]
+  },
   projects: [
-    { title: 'Mr Bean Project', type: 'CAMPAIGN / CONTENT', year: 'EDITABLE', image: '/images/projects/mrbean_project.webp', description: 'Replace this with the Mr Bean campaign case study or project details.' },
-    { title: 'The Pawsitive Project', type: 'UGC / LIFESTYLE', year: 'EDITABLE', image: '/images/projects/the_pawsitive_project.webp', description: 'Replace this with The Pawsitive project case study or campaign details.' },
-    { title: 'The Fur Club', type: 'SOCIAL / CONTENT', year: 'EDITABLE', image: '/images/projects/thefurclub_project.webp', description: 'Replace this with The Fur Club campaign case study or project details.' }
+    // Content Creation (Placeholders for now)
+    { title: 'Content Project 1', role: 'SOCIAL / CONTENT', category: 'Content Creation', image: '', summary: 'Social media content and strategy.', techStack: [] },
+    { title: 'Content Project 2', role: 'UGC / LIFESTYLE', category: 'Content Creation', image: '', summary: 'UGC video production and planning.', techStack: [] },
+    
+    // Web Design
+    { 
+      title: 'The Fur Club by PawsitiveCare', 
+      role: 'Frontend Developer', 
+      category: 'Web Design', 
+      image: '/images/projects/The Fur Club-lyeanne.webp', 
+      summary: 'Pet clinic platform with online records and biometric pet verification.',
+      techStack: ['Laravel', 'React', 'Python', 'PostgreSQL']
+    },
+
+    { 
+      title: 'PawsitiveCare', 
+      role: 'Frontend Developer', 
+      category: 'Web Design', 
+      image: '/images/projects/ThePawsitiveCare-lyeanne.webp', 
+      summary: 'Product landing page for pet biometric research and project showcase.',
+      techStack: ['React', 'Tailwind CSS', 'Vercel']
+    },
+
+    { 
+      title: 'OneClique Studio', 
+      role: 'Founder & CEO', 
+      category: 'Web Design', 
+      image: '/images/projects/OneCliqueStudio-lyeanne.webp', 
+      summary: 'Official brand website and client portfolio for a multimedia production studio.',
+      techStack: ['WordPress']
+    },
+
+    { 
+      title: 'Mr.Beans Coffee Co.', 
+      role: 'Web Designer', 
+      category: 'Web Design', 
+      image: '/images/projects/Mr. Beans-lyeanne.webp', 
+      summary: 'E-commerce coffee storefront with custom catalog and checkout.',
+      techStack: ['WordPress', 'WooCommerce']
+    },
+
+    { 
+      title: 'PawsitiveCare v1 (Legacy Prototype)', 
+      role: 'Frontend Developer', 
+      category: 'Web Design', 
+      image: '/images/projects/PawsitiveCare-lyeanne.webp', 
+      summary: 'Veterinary clinic prototype for appointments and patient records.',
+      techStack: ['PHP', 'Laravel', 'MySQL']
+    },
+    
+    { 
+      title: 'PUP Grading System', 
+      role: 'QA Engineer', 
+      category: 'Web Design', 
+      image: '/images/projects/PUPGradingSystem-lyeanne.webp', 
+      summary: 'Academic portal for grade evaluation, student records, and reporting.',
+      techStack: ['Java', 'Spring Boot', 'React', 'SQLite']
+    },
   ]
 };

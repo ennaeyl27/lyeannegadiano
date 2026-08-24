@@ -1,42 +1,36 @@
-# Lyeanne Gadiano — Editable React Portfolio
+# Lyeanne Gadiano — Digital Portfolio
 
-A responsive React/Vite portfolio inspired by the supplied editorial web-design reference. The layout is intentionally original while borrowing the reference's high-level visual direction: oversized typography, warm neutral paper background, olive accent, editorial serif text, project cards, services, process, and a strong contact banner.
+**Digital Content Creator & Web Designer**
 
-## Run locally
+Welcome to my personal portfolio repository! I transform ideas into digital experiences people can connect with. 
 
-1. Install Node.js (18+ recommended).
-2. Open this folder in VS Code / Cursor.
-3. Run `npm install`.
-4. Run `npm run dev`.
-5. Open the local URL Vite gives you.
+## 🚀 About Me
 
-## Edit your details
+I am a creative professional based in Metro Manila, Philippines, with expertise in:
+- **Web Design & Frontend Development** (React, HTML5, CSS, JS)
+- **Digital Content Creation** (Short-form videos for TikTok and Instagram)
+- **Social Media Strategy & UGC Content**
 
-Almost all personal content is in:
+With over 3 years in digital content and 50+ brand collaborations, I specialize in blending bold editorial aesthetics with seamless user experiences.
 
-`src/data.js`
+## 🛠️ Tech Stack & Skills
 
-Change your name, intro, location, email, stats, services, projects, experience, education, and skills there.
+- **Web Development**: React, HTML5, CSS, JavaScript, PHP, Laravel, WordPress, Tailwind CSS
+- **Creative Tools**: CapCut, Canva, Short-Form Video Editing
+- **Other**: Social Media Management, UGC Content Creation, Python, C++, Google Workspace
 
-## Add your images
+## 🌐 Connect With Me
 
-Put your files in:
+- **Email**: gadianolyeanne@gmail.com
+- **LinkedIn**: [Lyeanne Gadiano](https://www.linkedin.com/in/lyeanne-gadiano-491354311/)
+- **TikTok**: [@ennaeyl](https://www.tiktok.com/@ennaeyl)
 
-`public/images/`
+---
 
-Then update the image filename in `src/data.js`.
+### Running the Project Locally
 
-Example:
+This project is built with React and Vite.
 
-`image: '/images/my-project.jpg'`
-
-For the profile area, replace the placeholder in `src/main.jsx` with an `<img src="/images/profile.jpg" ... />` when you are ready to use a portrait.
-
-### Recommended image sizes
-- Profile: 1000 × 1200px or larger
-- Project images: 1000 × 1200px or 4:5
-- Keep files compressed (WebP/JPG) for faster loading
-
-## Important
-
-The supplied reference image is design inspiration only and is not bundled as a website asset. Replace all placeholder project/profile images with your own work.
+1. Install Node.js (18+ recommended)
+2. Run `npm install` to install dependencies
+3. Run `npm run dev` to start the local server
