@@ -237,6 +237,10 @@ nav button:hover::after {
   border-radius: 2px;
 }
 
+.hero-statement p {
+  margin: 0;
+}
+
 /* Enlarged Foreground Portrait */
 .hero-visual {
   position: relative;

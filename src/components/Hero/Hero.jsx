@@ -17,7 +17,7 @@ export function Hero({ portfolio }) {
           <h1 className="sr-only">LYEANNE GADIANO</h1>
           <div className="hero-statement">
             <p>I transform ideas into <em>digital experiences</em></p>
-            <p style={{ marginTop: 4 }}>people can <em>connect with.</em></p>
+            <p>people can <em>connect with.</em></p>
           </div>
         </div>
         <div className="hero-visual">
