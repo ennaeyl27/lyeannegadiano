@@ -239,7 +239,8 @@ nav button:hover::after {
 
 .hero-statement p {
   margin: 0;
-  font: 30px/1.22 var(--serif);
+  /* larger text and tighter spacing for stronger impact */
+  font: 36px/1.06 var(--serif);
 }
 
 /* Enlarged Foreground Portrait */
