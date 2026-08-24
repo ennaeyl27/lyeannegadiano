@@ -20,7 +20,22 @@ export const portfolio = {
     { name: "Kiehl's", src: "/images/brands/kiehl's_logo.webp" },
     { name: 'Nutrifizz', src: '/images/brands/nutrifizz_logo.webp' },
     { name: 'Robinsons', src: '/images/brands/robinsons_logo.webp' },
-    { name: 'Shopee', src: '/images/brands/shopee_logo.webp' }
+    { name: 'Shopee', src: '/images/brands/shopee_logo.webp' },
+    { name: 'Maybelline', src: '/images/brands/maybelline_logo.webp' },
+    { name: 'Brumate', src: '/images/brands/brumate_logo.webp' },
+    { name: 'Deonat', src: '/images/brands/deonat_logo.webp' },
+    { name: 'Bravo', src: '/images/brands/bravo_logo.webp' },
+    { name: 'Barenbliss', src: '/images/brands/barenbliss_logo.webp' },
+    { name: 'Hottie Diary', src: '/images/brands/hottiediary_logo.webp' },
+    { name: 'Nivea', src: '/images/brands/nivea_logo.webp' },
+    { name: 'Lancome', src: '/images/brands/lancome_logo.webp' },
+    { name: 'GCash', src: '/images/brands/gcash_logo.webp' },
+    { name: 'Spotlight', src: '/images/brands/spotlight_logo.webp' },
+    { name: 'Fhilar', src: '/images/brands/fhilar_logo.webp' },
+    { name: 'Zenzest', src: '/images/brands/zenzest_logo.png' },
+    { name: 'Yoole', src: '/images/brands/yoole_logo.webp' },
+    { name: 'Glad2Glow', src: '/images/brands/glad2glow_logo.webp' },
+    { name: 'Careline', src: '/images/brands/careline_logo.webp' }
   ],
   services: [
     { title: 'CONTENT CREATION', text: 'Short-form content for TikTok and Instagram, from concept to final edit.' },
@@ -45,6 +60,16 @@ export const portfolio = {
         'Created short-form video content for TikTok and Instagram focused on fashion, beauty, lifestyle, and UGC.',
         'Developed content concepts, scripts, hooks, captions, and visual ideas based on social media trends.',
         'Filmed and edited videos using CapCut, including transitions, text overlays, music, sound effects, and captions.'
+      ]
+    },
+    {
+      title: 'CEO',
+      date: 'Sept 2025 — Jan 2026',
+      subtitle: 'One Clique Studio — San Juan City',
+      bullets: [
+        'Founded and managed a creative studio focused on digital content, branding, and multimedia projects.',
+        'Planned and managed photoshoots, creative concepts, styling, schedules, and production workflows.',
+        'Developed visual content and creative materials aligned with brand identity and audience engagement.'
       ]
     },
     {
@@ -83,9 +108,13 @@ export const portfolio = {
     ]
   },
   projects: [
-    // Content Creation (Placeholders for now)
-    { title: 'Content Project 1', role: 'SOCIAL / CONTENT', category: 'Content Creation', image: '', summary: 'Social media content and strategy.', techStack: [] },
-    { title: 'Content Project 2', role: 'UGC / LIFESTYLE', category: 'Content Creation', image: '', summary: 'UGC video production and planning.', techStack: [] },
+    // Content Creation (auto-populated from public/images/contents)
+    { title: 'Affiliate Content', role: 'AFFILIATE CONTENT', category: 'Content Creation', image: '/images/contents/1st.webp', summary: 'Over 20,000 sold items', techStack: [] },
+    { title: 'Affiliate Content', role: 'AFFILIATE CONTENT', category: 'Content Creation', image: '/images/contents/2nd.webp', summary: 'Over 10,000 sold items', techStack: [] },
+    { title: 'Sony Collaboration', role: 'SONY COLLABORATION', category: 'Content Creation', image: '/images/contents/3rd.webp', summary: '', techStack: [] },
+    { title: 'Shopee Collaboration', role: 'SHOPEE COLLABORATION', category: 'Content Creation', image: '/images/contents/4th.webp', summary: '', techStack: [] },
+    { title: 'Affiliate Content', role: 'AFFILIATE CONTENT', category: 'Content Creation', image: '/images/contents/5th.webp', summary: 'Over 5,000 sold items', techStack: [] },
+    { title: 'IKEA Collaboration', role: 'IKEA COLLABORATION', category: 'Content Creation', image: '/images/contents/6th.webp', summary: '', techStack: [] },
     
     // Web Design
     { 
