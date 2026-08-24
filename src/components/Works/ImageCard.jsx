@@ -26,8 +26,24 @@ const TECH_ICONS = {
 export function ImageCard({ project }) {
   const href = project.url || project.link || null;
 
-  const card = (
-    <article className="project-card">
+
+
+  const handleOpen = () => {
+    if (href) window.open(href, '_blank', 'noopener,noreferrer');
+  };
+
+  const handleKey = (e) => {
+    if (!href) return;
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      handleOpen();
+    }
+  };
+
+  const clickableProps = href ? { onClick: handleOpen, tabIndex: 0, onKeyDown: handleKey, style: { cursor: 'pointer' }, role: 'link' } : {};
+
+  return (
+    <article className="project-card" {...clickableProps}>
       <div className="project-image">
         <img src={project.image} alt={project.title || ''} onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.parentElement.classList.add('placeholder'); }} />
       </div>
@@ -65,14 +81,4 @@ export function ImageCard({ project }) {
       )}
     </article>
   );
-
-  if (href) {
-    return (
-      <a className="project-link" href={href} target="_blank" rel="noopener noreferrer">
-        {card}
-      </a>
-    );
-  }
-
-  return card;
 }
