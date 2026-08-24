@@ -33,7 +33,7 @@ export function ProjectsPage({ portfolio, initialFilter, onBack }) {
 
         <div className="reveal work-grid">
           <div className="projects">
-            {filteredProjects.map((p) => <ImageCard key={p.title} project={p} />)}
+            {filteredProjects.map((p) => <ImageCard key={p.image} project={p} />)}
           </div>
         </div>
       </main>

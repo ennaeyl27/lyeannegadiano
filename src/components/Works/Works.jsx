@@ -21,7 +21,7 @@ export function Works({ portfolio, scrollTo, currentFilter, onFilterChange, onVi
       </div>
       <div className="work-grid">
         <div className="projects">
-          {displayedProjects.map((p) => <ImageCard key={p.title} project={p} />)}
+          {displayedProjects.map((p) => <ImageCard key={p.image} project={p} />)}
         </div>
         
         {remainingCount > 0 && (
