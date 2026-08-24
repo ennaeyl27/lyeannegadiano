@@ -4,7 +4,7 @@
 
 Welcome to my personal portfolio repository! I transform ideas into digital experiences people can connect with. 
 
-## 🚀 About Me
+##  About Me
 
 I am a creative professional based in Metro Manila, Philippines, with expertise in:
 - **Web Design & Frontend Development** (React, HTML5, CSS, JS)
@@ -13,13 +13,13 @@ I am a creative professional based in Metro Manila, Philippines, with expertise 
 
 With over 3 years in digital content and 50+ brand collaborations, I specialize in blending bold editorial aesthetics with seamless user experiences.
 
-## 🛠️ Tech Stack & Skills
+## Tech Stack & Skills
 
 - **Web Development**: React, HTML5, CSS, JavaScript, PHP, Laravel, WordPress, Tailwind CSS
 - **Creative Tools**: CapCut, Canva, Short-Form Video Editing
 - **Other**: Social Media Management, UGC Content Creation, Python, C++, Google Workspace
 
-## 🌐 Connect With Me
+##  Connect With Me
 
 - **Email**: gadianolyeanne@gmail.com
 - **LinkedIn**: [Lyeanne Gadiano](https://www.linkedin.com/in/lyeanne-gadiano-491354311/)
