@@ -84,7 +84,7 @@ export const portfolio = {
     }
   ],
   education: [
-    { school: 'Polytechnic University of the Philippines — San Juan Campus', degree: 'Bachelor of Science in Information Technology', status: '2022-2027' },
+    { school: 'Polytechnic University of the Philippines — San Juan Campus', degree: 'Bachelor of Science in Information Technology', status: '2022 — 2027' },
     { school: 'College of Arts and Sciences in Asia and the Pacific', degree: 'Information and Communications Technology — Senior High School', status: '2017 — 2021' }
   ],
   skills: {
@@ -101,6 +101,7 @@ export const portfolio = {
       'HTML5',
       'CSS',
       'JavaScript',
+      'React',
       'Python',
       'C++',
       'Microsoft Office',

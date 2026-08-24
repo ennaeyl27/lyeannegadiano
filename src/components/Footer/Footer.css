@@ -16,12 +16,16 @@ footer .footer-brand {
   gap: 8px;
 }
 
-footer strong {
-  font-size: 42px;
+footer .brand {
+  font-size: 32px;
   font-weight: 700;
+  letter-spacing: -0.06em;
   color: var(--ink);
-  margin-right: 0;
   line-height: 1;
+}
+
+footer .brand span {
+  color: var(--pistachio);
 }
 
 footer .footer-title {
@@ -59,6 +63,10 @@ footer .socials {
 
 footer a:hover {
   color: var(--pistachio-dark);
+}
+
+footer .brand:hover {
+  color: var(--ink);
 }
 
 footer .socials a:last-child {

@@ -8,7 +8,7 @@ export function Footer({ portfolio }) {
   return (
     <footer>
       <div className="footer-brand">
-        <strong>LG.</strong>
+        <a className="brand" href="#top">LG<span>.</span></a>
         <div className="footer-title">
           <span>Digital content creator</span>
           <span>&amp; WEB DESIGNER</span>

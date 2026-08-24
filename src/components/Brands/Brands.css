@@ -23,8 +23,56 @@
 }
 
 .brand-logos-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 16px;
   padding: 54px 0 64px 0;
-  overflow: hidden;
+}
+
+.brand-carousel {
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.brand-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.brand-carousel-track {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  width: max-content;
+  padding: 6px 4px 18px;
+}
+
+.brand-carousel-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--butter-soft);
+  color: var(--ink);
+  box-shadow: 0 6px 18px rgba(24, 30, 21, 0.08);
+}
+
+.brand-carousel-button:hover:not(:disabled) {
+  color: var(--pistachio-dark);
+  transform: translateY(-1px);
+}
+
+.brand-carousel-button:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  box-shadow: none;
 }
 
 /* Custom Item Rendering */
@@ -33,52 +81,36 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
+  flex: 0 0 auto;
 }
 
 .brand-loop-item-custom img {
-  height: var(--logoloop-logoHeight);
+  height: 50px;
   width: auto;
   object-fit: contain;
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.brand-tooltip {
-  position: absolute;
-  top: calc(100% + 14px);
-  background: var(--ink);
-  color: #fff;
-  padding: 6px 10px;
-  border-radius: 6px;
-  font-size: 13px;
-  letter-spacing: 0.08em;
-  font-weight: 600;
-  white-space: nowrap;
-  opacity: 0;
-  transform: translateY(-8px);
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  pointer-events: none;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  z-index: 20;
+.brand-loop-item-custom:hover img {
+  transform: scale(1.08);
 }
 
-/* Little triangle on tooltip */
-.brand-tooltip::before {
-  content: '';
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent transparent var(--ink) transparent;
-}
+@media (max-width: 720px) {
+  .brand-logos-container {
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    gap: 10px;
+  }
 
-.logoloop--scale-hover .brand-loop-item-custom:hover img {
-  transform: scale(1.15);
-}
+  .brand-carousel-track {
+    gap: 40px;
+  }
 
-.logoloop--scale-hover .brand-loop-item-custom:hover .brand-tooltip {
-  opacity: 1;
-  transform: translateY(0);
+  .brand-carousel-button {
+    width: 38px;
+    height: 38px;
+  }
+
+  .brand-loop-item-custom img {
+    height: 44px;
+  }
 }

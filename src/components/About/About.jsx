@@ -1,6 +1,6 @@
 import React from 'react';
 import { Camera, Code2, Smartphone, Megaphone, MonitorPlay, PenTool, Film, CheckCircle, Palette } from 'lucide-react';
-import { SiHtml5, SiJavascript, SiPython, SiCplusplus } from 'react-icons/si';
+import { SiHtml5, SiJavascript, SiPython, SiCplusplus, SiReact } from 'react-icons/si';
 import { FaCss3Alt, FaMicrosoft, FaGoogle } from 'react-icons/fa';
 import './About.css';
 
@@ -15,6 +15,7 @@ const iconMap = {
   'HTML5': <SiHtml5 size={14} />,
   'CSS': <FaCss3Alt size={14} />,
   'JavaScript': <SiJavascript size={14} />,
+  'React': <SiReact size={14} />,
   'Python': <SiPython size={14} />,
   'C++': <SiCplusplus size={14} />,
   'Microsoft Office': <FaMicrosoft size={14} />,
