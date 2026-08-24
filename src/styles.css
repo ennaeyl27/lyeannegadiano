@@ -506,6 +506,25 @@ nav button:hover::after {
   transform: translateY(-4px);
 }
 
+.project-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.project-link:hover .project-card {
+  transform: translateY(-4px);
+}
+
+.project-link:focus {
+  outline: 3px solid rgba(109,139,82,0.18);
+  outline-offset: 4px;
+}
+
+.project-link .project-card {
+  transition: var(--transition);
+}
+
 .project-image {
   height: 290px;
   background: linear-gradient(135deg, var(--butter-soft) 0%, #E6EEDB 100%);

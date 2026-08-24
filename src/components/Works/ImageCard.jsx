@@ -24,14 +24,18 @@ const TECH_ICONS = {
 };
 
 export function ImageCard({ project }) {
-  return (
+  const href = project.url || project.link || null;
+
+  const card = (
     <article className="project-card">
       <div className="project-image">
-        <img src={project.image} alt="" onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.parentElement.classList.add('placeholder'); }} />
+        <img src={project.image} alt={project.title || ''} onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.parentElement.classList.add('placeholder'); }} />
       </div>
       <div className="project-meta">
         <h3>{project.title}</h3>
-        <p>{project.role}</p>
+        {project.role && project.title && project.role.toLowerCase() !== project.title.toLowerCase() && (
+          <p>{project.role}</p>
+        )}
       </div>
       <p className="project-desc">{project.summary}</p>
       {project.techStack && project.techStack.length > 0 && (
@@ -61,4 +65,14 @@ export function ImageCard({ project }) {
       )}
     </article>
   );
+
+  if (href) {
+    return (
+      <a className="project-link" href={href} target="_blank" rel="noopener noreferrer">
+        {card}
+      </a>
+    );
+  }
+
+  return card;
 }
