@@ -109,12 +109,12 @@ export const portfolio = {
   },
   projects: [
     // Content Creation (auto-populated from public/images/contents)
-    { title: 'Affiliate Content', role: 'AFFILIATE CONTENT', category: 'Content Creation', image: '/images/contents/1st.webp', summary: 'Over 20,000 sold items', techStack: [] },
-    { title: 'Affiliate Content', role: 'AFFILIATE CONTENT', category: 'Content Creation', image: '/images/contents/2nd.webp', summary: 'Over 10,000 sold items', techStack: [] },
-    { title: 'Sony Collaboration', role: 'SONY COLLABORATION', category: 'Content Creation', image: '/images/contents/3rd.webp', summary: '', techStack: [] },
-    { title: 'Shopee Collaboration', role: 'SHOPEE COLLABORATION', category: 'Content Creation', image: '/images/contents/4th.webp', summary: '', techStack: [] },
-    { title: 'Affiliate Content', role: 'AFFILIATE CONTENT', category: 'Content Creation', image: '/images/contents/5th.webp', summary: 'Over 5,000 sold items', techStack: [] },
-    { title: 'IKEA Collaboration', role: 'IKEA COLLABORATION', category: 'Content Creation', image: '/images/contents/6th.webp', summary: '', techStack: [] },
+    { title: 'Affiliate Content', role: 'AFFILIATE CONTENT', category: 'Content Creation', image: '/images/contents/1st.webp', summary: 'Over 20,000 sold items', url: 'https://vt.tiktok.com/ZSVxqtx9m/', techStack: [] },
+    { title: 'Affiliate Content', role: 'AFFILIATE CONTENT', category: 'Content Creation', image: '/images/contents/2nd.webp', summary: 'Over 10,000 sold items', url: 'https://vt.tiktok.com/ZSVxbXrV3/', techStack: [] },
+    { title: 'Sony Collaboration', role: 'SONY COLLABORATION', category: 'Content Creation', image: '/images/contents/3rd.webp', summary: '', url: 'https://vt.tiktok.com/ZSVxb9vft/', techStack: [] },
+    { title: 'Shopee Collaboration', role: 'SHOPEE COLLABORATION', category: 'Content Creation', image: '/images/contents/4th.webp', summary: '', url: 'https://vt.tiktok.com/ZSVxbP15p/', techStack: [] },
+    { title: 'Affiliate Content', role: 'AFFILIATE CONTENT', category: 'Content Creation', image: '/images/contents/5th.webp', summary: 'Over 5,000 sold items', url: 'https://vt.tiktok.com/ZSVxbM1xA/', techStack: [] },
+    { title: 'IKEA Collaboration', role: 'IKEA COLLABORATION', category: 'Content Creation', image: '/images/contents/6th.webp', summary: '', url: 'https://www.tiktok.com/@ennaeyl/video/7664854054513822983?is_from_webapp=1&sender_device=pc', techStack: [] },
     
     // Web Design
     { 
