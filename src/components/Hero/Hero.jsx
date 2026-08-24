@@ -15,10 +15,7 @@ export function Hero({ portfolio }) {
             <span className="title-row">GADIANO</span>
           </div>
           <h1 className="sr-only">LYEANNE GADIANO</h1>
-          <div className="hero-statement">
-            <p>I transform ideas into <em>digital experiences</em></p>
-            <p>people can <em>connect with.</em></p>
-          </div>
+          <p className="hero-statement">I transform ideas into <em>digital experiences</em> people can <span style={{ whiteSpace: 'nowrap' }}><em>connect with.</em></span></p>
         </div>
         <div className="hero-visual">
           <div className="hero-portrait-frame">
