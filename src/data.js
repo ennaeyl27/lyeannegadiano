@@ -123,6 +123,7 @@ export const portfolio = {
       category: 'Web Design', 
       image: '/images/projects/The Fur Club-lyeanne.webp', 
       summary: 'Pet clinic platform with online records and biometric pet verification.',
+      url: 'https://thefurclub-pawsitivecare.vercel.app',
       techStack: ['Laravel', 'React', 'Python', 'PostgreSQL']
     },
 
@@ -132,6 +133,7 @@ export const portfolio = {
       category: 'Web Design', 
       image: '/images/projects/ThePawsitiveCare-lyeanne.webp', 
       summary: 'Product landing page for pet biometric research and project showcase.',
+      url: 'https://thepawsitivecare.vercel.app',
       techStack: ['React', 'Tailwind CSS', 'Vercel']
     },
 
@@ -150,6 +152,7 @@ export const portfolio = {
       category: 'Web Design', 
       image: '/images/projects/Mr. Beans-lyeanne.webp', 
       summary: 'E-commerce coffee storefront with custom catalog and checkout.',
+      url: 'https://mrbeans.online',
       techStack: ['WordPress', 'WooCommerce']
     },
 
